@@ -1,0 +1,472 @@
+:root {
+    --black: #373737;
+    --red: #DC2E27;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+header {
+    width: auto;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 30% 10% 50%;
+    column-gap: 40px;
+}
+
+.header_logo_image {
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.header_logo_image>img {
+    width: 65%;
+    height: 65%;
+}
+
+
+.twenty_nine_img {
+    display: flex;
+    justify-content: left;
+}
+
+.twenty_nine_img>img {
+    width: 70%;
+    height: 70%;
+}
+
+.header_navbar {
+    width: fit-content;
+}
+
+.header_navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.header_navbar li {
+    float: left;
+    padding-left: 12px;
+}
+
+.header_navbar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.header_navbar li a input {
+    background-color: black;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    color: grey;
+    width: 100px;
+
+}
+
+
+.header_bottom_navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #dc2e27;
+}
+
+.header_bottom_navbar ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header_bottom_navbar li {
+    float: left;
+    margin-left: 30px;
+}
+
+.header_bottom_navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.header_bottom_navbar li a:hover {
+    background-color: #111;
+}
+
+.img-section{
+    width: 100%;
+}
+
+.img-section img{
+    width: 100%;
+    animation: slideranimation 20s linear infinite;
+    animation-play-state: running;
+    cursor: pointer;
+}
+
+
+@keyframes slideranimation {
+
+    25%{
+        content: url("https://www.geu.ac.in/content/dam/geu/carousel/2022/mar/dehradun-alumni-reunion-2022.jpg");
+    }
+
+    50%{
+        content: url("https://www.geu.ac.in/content/dam/geu/carousel/2022/mar/website-coursera.jpg");
+    }
+
+    75%{
+            content: url("https://www.geu.ac.in/content/dam/geu/carousel/2022/feb/MBA-Placement-Banner.jpg");
+    }
+
+    100%{
+        content:url("https://www.geu.ac.in/content/dam/geu/carousel/main/2022/jan/MBA-2022.jpg");
+    }
+
+    
+}
+
+.find-course-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding-bottom: 50px;
+}
+
+.find-course {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.find-a-course {
+    grid-column: 1/span 3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.course {
+    padding: 20px;
+    border-bottom: 1px dashed white;
+    padding-right: 100px;
+    font-size: 0.8em;
+}
+
+.bottom-img-section {
+    width: 100%;
+}
+
+.tab-switch {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.tab-switch ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-switch li {
+    float: left;
+}
+
+.tab-switch li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #dc2e27;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 10px;
+    border-bottom: 3px solid rgb(51, 51, 51);
+}
+
+.tab-switch .active {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #111;
+    background-color: #ffffff;
+}
+
+.tab-desc {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.column1, .column2{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    color: #111;
+    font-weight: lighter;
+    font-size:small;
+}
+
+.column1{
+    padding-left: 35%;
+}
+
+.column2{
+    padding-right:35%;
+}
+
+.img_display {
+    margin: 10px;
+}
+
+.desc p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.readmore-div{
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+}
+
+.readmore-div button{
+    width: 120px;
+    height: 40px;
+    background-color:#dc2e27;
+    color: white;
+    border: none;
+    margin: 0 auto;
+}
+
+.celebrating{
+    background-color: rgb(55, 55, 55);
+    display: grid;
+    grid-template-columns: 40% 25% 30%;
+    padding: 50px;
+    gap: 20px;
+}
+
+.textbox{
+    color: white;
+}
+
+.noticebox{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto 45%;
+    justify-content: left;
+}
+
+.box-img{
+text-align: right;
+}
+
+.box-text{
+    text-align: left;
+    padding: 5px;
+    background-color: white;
+    height: auto;
+    margin-bottom: 20px;
+    line-height: 17px;
+}
+
+.box-text p:first-child{
+    font-weight: bold;
+}
+
+.box-text:hover{
+    background-color: #dc2e27;
+    color: white;
+    cursor: pointer;
+}
+
+.box div button{
+    border-radius: 10px;
+    padding: 8px;
+    font-size: small;
+    border: none;
+}
+
+.box div button:hover{
+    background-color: #dc2e27;
+    color:white;
+}
+
+.box .invisible-img{
+    visibility: hidden;
+}
+
+.box .button-box{
+    text-align: right;
+}
+
+.outer {
+    padding: 400px;
+}
+
+.heading-align {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-color {
+    color: var(--red);
+}
+
+.bottom-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.bottom-container img {
+    float: left;
+}
+
+.bottom-container p {
+    box-sizing: border-box;
+    margin: 0px 40px 0px 10px;
+    width: 500px;
+}
+
+.line-years {
+    border-top: 2px solid var(--black);
+    margin: 100px 90px 80px 90px;
+}
+
+.line-years ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.line-years li {
+    display: inline;
+    text-decoration: none;
+}
+
+.details {
+    padding: 14px 0px 14px 0px;
+    background-color: var(--black);
+
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(5, 16%);
+    color: white;
+    gap: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.red-boder {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    box-sizing: border-box;
+    column-gap: 8px;
+}
+
+.circular {
+    height: 90px;
+    width: 90px;
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+}
+
+.circular img {
+    margin: auto;
+}
+
+.red-boder .space-between p {
+    padding-bottom: 6px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer {
+    background-color: var(--red);
+    color: white;
+    font-size: 12px;
+}
+
+.icons {
+    float: left;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+}
+
+.icons-align {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px 100px 0px 300px;
+}
+
+.icons li {
+    display: inline;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.tour {
+    border-left: solid white 1px;
+    padding: 20px;
+    height: 80px;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer nav li {
+    display: inline;
+    padding-left: 20px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 30px;
+}
